@@ -1,0 +1,277 @@
+  
+
+  /* ALL PAGES CSS */
+
+/* NEST NAVIGATION MENU */
+.topnav {
+  overflow: hidden;
+  background-image: linear-gradient(#9e5432, rgb(221, 168, 98));
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Pseudo-class */
+.topnav a:hover {
+  background-image: linear-gradient(#bb6841, rgb(240, 206, 155));
+  color: black;
+}
+
+.topnav a.active {
+  color: white;
+}
+
+/* Style the Log Off button */
+.topnav .logoff-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.topnav .logoff-button img {
+  width: 30px;
+  height: 30px;
+}
+
+.topnav .logoff-button:hover {
+  background-color: white;
+}
+
+/* END NEST NAVIGATION MENU */
+
+/* Style -> all content */
+* {
+    box-sizing: border-box;
+    align-items: center;
+  }
+
+/* Style -> body */
+  body {
+    
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+/* Style  -> header */
+  header {
+    background-color: #d4784d;
+    opacity: 0.8;
+    padding: 3px;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+  }
+  h1 {
+    color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(56, 41, 8), 0 0 5px rgb(221, 171, 95); 
+  }
+  h2{
+    text-align: center;
+
+  }
+  h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  
+  p{
+    text-align: center;
+  }
+
+/* Style container for flexboxes -> section*/
+  section {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    
+  }
+   
+/* Style the content -> article */
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+    width: 100%;
+  }
+  .parallax {
+    /* The image used */
+    background-image: url("imagini/background_cake.png");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+  }
+  /* Style the footer */
+  footer {
+    background-color: #d4784d;
+    opacity: 0.8;
+    padding: 10px;
+    text-align: center;
+    color: white;
+ 
+  }
+   
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: row;
+      flex-direction: row;
+    }
+  }
+  /* STOP ALL PAGES CSS */
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #be5b2d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #884b2f;
+    transform: scale(1.1); /* increases the size of the container by 10% */
+    transition: transform 0.3s ease-in-out; /* adds a smooth transition effect */
+  }
+  
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .form-item {
+    background-color: #f8f4ee;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(240, 206, 155);
+    width: 45%;
+  }
+  .form-item:hover{
+    background-color: #faeede;
+    transform: scale(1.1); /* increases the size of the container by 10% */
+    transition: transform 0.3s ease-in-out; /* adds a smooth transition effect */
+  }
+  .form-submit {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+
+  .question_container {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .question {
+    background-color: #f8f4ee;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(240, 206, 155);
+    width: 45%;
+  }
+  
+  .question:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+  }
+
+
+  .scor{
+    color: red;
+    font-weight: bold;
+  }
+
+.mesaj_eroare{
+  color: red;
+  font-weight: bold;
+
+}  
+
+/* Vizualicare_cos table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border: 1px solid #ddd;
+}
+
+th {
+  background: linear-gradient(#9e5432, rgb(221, 168, 98));
+  color: white;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+td {
+  background-color: rgb(248, 227, 199);
+}
+
+td:hover {
+  background-color: #f9ebe7;
+  color: black;
+}
+/* END Vizualicare_cos table */
+
+
+
+.autentificare {
+/* Center align the element */
+display: flex;
+justify-content: center;
+align-items: center;
+  background-color: #be5b2d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button{
+  width: 100%;
+  /* Center align the element */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    background-color: #be5b2d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }

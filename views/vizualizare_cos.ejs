@@ -1,0 +1,37 @@
+<header>
+    <h1>Index</h1>
+    <% if (typeof username !== 'undefined') { %>
+      <h2>Autentificat ca <%= username %></h2>
+    <% } else { %>
+      <h2>Neautentificat</h2>
+    <% } %>
+  </header>
+  
+  <section>
+    <article>
+      <% if (cos && cos.length > 0) { %>
+        <h3>Produse adăugate în coș:</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nume</th>
+              <th>Pret</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% cos.forEach(function(item) { %>
+              <tr>
+                <td><%= item[0] %></td>
+                <td><%= item[1] %></td>
+                <td><%= item[2] %></td>
+              </tr>
+            <% }); %>
+          </tbody>
+        </table>
+      <% } else { %>
+        <p>Coșul de cumpărături este gol.</p>
+      <% } %>
+    </article>
+  </section>
+  

@@ -1,0 +1,28 @@
+<header>
+    <h1>Index</h1>
+  </header>
+  <section>
+    <article>
+        <% if (mesajEroare) { %>
+            <p class="mesaj_eroare"><%= mesajEroare %></p>
+          <% } %>      
+            <form method="POST" action="/verificare-autentificare">
+            <label for="username">Utilizator:</label><br>
+            <input type="text" id="id_username" name="username" value="John"><br>
+
+            <label for="password">Parola:</label><br>
+            <input type="password" id="id_password" name="password" value="Doe"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="id_email" name="email"><br />
+
+            <label for="telefon">Telefon:</label><br>
+            <input type="tel" id="id_phone" name="phone" placeholder="aaa-aaa-aaaa"
+                required><br />
+
+            <input type="submit" class="form-submit" value="Submit" />
+            </form>
+            
+    </article>
+  </section>
+  

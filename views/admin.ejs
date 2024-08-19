@@ -1,0 +1,25 @@
+<header>
+    <h1>Admin</h1>
+    <% if (typeof username !== 'undefined') { %>
+      <h1>Autentificat ca <%= username %></h1>
+    <% } else { %>
+      <h1>Neautentificat</h1>
+    <% } %>
+  </header>
+  <section>
+    <article>
+      <h1>HELLOO</h1>
+      <form action="/admin" method="POST">
+        <div>
+          <label for="productName">Product Name:</label>
+          <input type="text" id="productName" name="productName" required>
+        </div>
+        <div>
+          <label for="price">Price:</label>
+          <input type="number" id="price" name="price" required>
+        </div>
+        <button type="submit">Add Product</button>
+      </form>
+    </article>
+  </section>
+  

@@ -1,0 +1,117 @@
+[
+    {
+    "intrebare": "Care este tipul de tastatură preferat pentru gaming?",
+    "variante": [
+    "Tastatura cu membrane",
+    "Tastatura mecanică",
+    "Tastatura cu touchpad"
+    ],
+    "corect": 0
+    },
+    {
+    "intrebare": "Care este culoarea preferată pentru tastatura gaming?",
+    "variante": [
+    "Negru",
+    "Alb",
+    "RGB"
+    ],
+    "corect": 0
+    },
+    {
+    "intrebare": "Care dintre următoarele periferice este cel mai utilizat în designul grafic?",
+    "variante": [
+    "Tableta grafică",
+    "Mouse",
+    "Touchpad"
+    ],
+    "corect": 0
+    },
+    {
+    "intrebare": "Care este cel mai important aspect la o tastatură mecanică?",
+    "variante": [
+    "Switch-urile",
+    "Dimensiunea",
+    "Iluminarea"
+    ],
+    "corect": 0
+    },
+    {
+    "intrebare": "Care este rezoluția optimă pentru un mouse în jocurile FPS?",
+    "variante": [
+    "800 DPI",
+    "1600 DPI",
+    "3200 DPI"
+    ],
+    "corect": 1
+    },
+    {
+    "intrebare": "Care este cel mai important factor la o tabletă grafică?",
+    "variante": [
+    "Dimensiunea",
+    "Rezoluția",
+    "Presiunea stiloului"
+    ],
+    "corect": 2
+    },
+    {
+    "intrebare": "Ce tehnologie utilizează un monitor G-Sync?",
+    "variante": [
+    "Adaptive Sync",
+    "FreeSync",
+    "V-Sync"
+    ],
+    "corect": 0
+    },
+    {
+    "intrebare": "Câte butoane trebuie să aibă un mouse gaming?",
+    "variante": [
+    "3",
+    "5",
+    "7"
+    ],
+    "corect": 1
+    },
+    {
+    "intrebare": "Ce înseamnă DPI-ul la o tastatură?",
+    "variante": [
+    "Dimensiunea",
+    "Iluminarea",
+    "Sensibilitatea"
+    ],
+    "corect": 2
+    },
+    {
+    "intrebare": "Care este cel mai important factor la o căști pentru gaming?",
+    "variante": [
+    "Sunetul",
+    "Confortul",
+    "Microfonul"
+    ],
+    "corect": 0
+    },
+    {
+    "intrebare": "Ce tip de mouse preferi pentru navigarea pe calculator?",
+    "variante": [
+    "Mouse cu fir",
+    "Mouse fără fir",
+    "Trackball",
+    "Touchpad"
+    ],
+    "corect": 1
+    },
+    {
+    "intrebare": "Care este tipul tău preferat de tastatură pentru scriere?",
+    "variante": [
+    "Tastatură cu membrane",
+    "Tastatură mecanică",
+    "Tastatură cu touchpad",
+    "Tastatură ergonomică"
+    ],
+    "corect": 1
+    },
+  {
+    "intrebare": "Care este dimensiunea preferată pentru monitorul tău?",
+    "variante": ["21-24 inch", "25-27 inch", "28-32 inch", "Peste 32 inch"],
+    "corect": 2
+  }
+]

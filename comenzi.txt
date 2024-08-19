@@ -1,0 +1,13 @@
+CUM MA CONECTEZ LA BAZA DE DATE SI AVD TABELELE?
+    -> mysql -h 127.0.0.1 -P 3306 -u root -p
+    -> USE CUMPARATURI;
+    -> SELECT * FROM produse;
+
+CUM DESCHID MYSQL?
+    -> mysql.server start
+
+CUM VERIFIC DACA E IN RUN MYSQL?
+    -> mysql.server status
+
+CUM OPRESC SERVERUL MYSQL?
+    ->mysql.server stop

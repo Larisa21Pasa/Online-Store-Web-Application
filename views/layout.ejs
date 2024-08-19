@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html  lang="en">
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Titlul paginii</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="/">Home</a>
+      <a href="chestionar">Quiz</a>
+      <a href="vizualizare_cos">Cos</a>
+
+      <form method="POST" action="/deautentificare">
+        <button type="submit" class="logoff-button">
+          <img src="/imagini/logout.png" alt="Log Off">
+        </button>
+      </form>
+
+    </div>
+    
+    <main>
+      <%- body %>
+    </main>
+    <footer>
+      <h3 style="color: #b62020;">Pasa Larisa</h3>
+      <h3>Proiect PW - P2</h3>
+      <h3>DEADLINE: 24 mai </h3>
+    </footer>
+  </body>
+</html>

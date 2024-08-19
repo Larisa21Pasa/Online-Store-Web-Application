@@ -1,0 +1,34 @@
+
+<header>
+  <h1>Quiz</h1>
+  <% if (typeof username !== 'undefined') { %>
+    <h1>Autentificat ca <%= username %></h1>
+  <% } else { %>
+    <h1>Neautentificat</h1>
+  <% } %>
+</header>
+    <section>
+        <article>
+            <form method="POST" action="/rezultat-chestionar">
+              <div class="form-container">
+                <% for (let i = 0; i < intrebari.length; i++) { %>
+                  <div class="form-item">
+                  <h3> <%= intrebari[i].intrebare %></h3>
+                  <% for (let j = 0; j < intrebari[i].variante.length; j++) { %>
+                    <label>
+                      <input type="radio" name="q<%= i  %>" value="<%= j %>" />
+                      <%= intrebari[i].variante[j] %>
+                    </label>
+                  <% } %>
+                  </div>
+                </br>
+                <% } %>
+              </div>
+              
+                <input type="submit" class="form-submit" value="Verificați răspunsurile" />
+              </form>
+              
+              
+            
+        </article>
+</section>

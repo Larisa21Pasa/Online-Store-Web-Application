@@ -1,0 +1,62 @@
+<header>
+  <h1>Index</h1>
+  <% if (typeof username !== 'undefined') { %>
+    <h1>Autentificat ca <%= username %></h1>
+  <% } else { %>
+    <h1>Neautentificat</h1>
+  <% } %>
+</header>
+
+<section>
+  <article>
+    <a class ="autentificare" href="autentificare">AUTENTIFICARE</a>
+
+    <form action="/creare-bd" method="GET">
+      <button class ="autentificare" type="submit">CREARE BD</button>
+    </form>
+
+    <form action="/incarcare-bd" method="POST">
+      <button class ="autentificare" type="submit">INCARCARE BD</button>
+    </form>
+
+    
+    <% if (role === 'admin') { %>
+      <a class="autentificare" href="admin">ADMIN</a>
+    <% } %>
+    
+    <% if (Array.isArray(listaProduseDB) && listaProduseDB.length > 0) { %>
+      <table>
+        <caption>LISTA PRODUSE</caption>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nume</th>
+            <th>Pret</th>
+            <% if (typeof username !== 'undefined') { %>
+              <th>Adaugă în coș</th>
+            <% } %>
+          </tr>
+        </thead>
+        <tbody>
+          <% listaProduseDB.forEach(function(produs) { %>
+            <tr>
+              <% produs.forEach(function(item, index) { %>
+                <td><%= item %></td>
+              <% }); %>
+              <% if (typeof username !== 'undefined') { %>
+                <td>
+                  <form action="/adaugare_cos" method="POST">
+                    <input type="hidden" name="id" value="<%= produs[0]%>">
+                    <button type="submit">Adaugă în coș</button>
+                  </form>
+                </td>
+              <% } %>
+            </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    <% } %>
+
+    
+  </article>
+</section>

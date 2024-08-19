@@ -1,0 +1,23 @@
+<header>
+  <h1>Rezultate</h1>
+  <% if (typeof username !== 'undefined') { %>
+    <h1>Autentificat ca <%= username %></h1>
+  <% } else { %>
+    <h1>Neautentificat</h1>
+  <% } %>
+</header>
+  <section>
+    <article>
+      <p class="scor">Scorul este : <%= scor %></p>
+        <div class="question_container">
+      <% raspunsuriCorecte.forEach((raspuns) => { %>
+      <div class="question">
+        <p><%= raspuns %></p>
+      </div>
+      <% }) %>
+      
+      
+        </div>
+    </article>
+  </section>
+  
