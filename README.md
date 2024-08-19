@@ -38,8 +38,8 @@ Protects against injection attacks by sanitizing inputs and implementing securit
 	nodemon app.js
 
 ## Usage
-## Register and log in to explore the product listings.
-## Add products to your shopping cart and review them before placing an order.
-## Admin users can add new products to the database.
-## Experience secure login procedures and protection against unauthorized access and injection attacks.
-## Participate in the quiz questionnaire and view the results.
+Register and log in to explore the product listings.
+Add products to your shopping cart and review them before placing an order.
+Admin users can add new products to the database.
+Experience secure login procedures and protection against unauthorized access and injection attacks.
+Participate in the quiz questionnaire and view the results.
